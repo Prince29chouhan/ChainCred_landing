@@ -1,0 +1,99 @@
+.testimonial-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  padding: 3%;
+}
+
+.testimonial-wrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonial-card {
+  background: white;
+  box-shadow: 0px 0px 1rem rgba(255, 255, 255, 1);
+  border-radius: 8px;
+  padding: 4%;
+  margin-top: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1; 
+  position: relative;
+  overflow: visible; /* Allow overflow for the triangular cutout */
+}
+
+.testimonial-text {
+  margin-bottom: 1rem;
+  position: relative;
+  z-index: 1;
+}
+
+.stars {
+  color: #ffcc00;
+  font-size: 20px;
+}
+
+.testimonial-profile {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: -18%; /* Adjust this to ensure the profile section is at the correct position */
+  left: 5%;
+  transform: translateX(-50%);
+}
+
+.profile-image {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 20px;
+}
+
+.profile-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.testimonial-info h1 {
+  margin: 0;
+  color: #f7f3f3;
+  font-size: 1.5rem;
+}
+
+.testimonial-info p {
+  margin: 0;
+  color: #858590;
+  font-size: 1.2rem;
+}
+
+.testimonial-card::after {
+  content: '';
+  position: absolute;
+  bottom: -20px; /* Adjust to match the image position */
+  left: 10%;
+  transform: translateX(-50%);
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-top: 20px solid white;
+  z-index: 0; /* Make sure it appears behind the profile */
+}
+
+@media (max-width: 1024px) {
+  .testimonial-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-container {
+    grid-template-columns: 1fr;
+  }
+}

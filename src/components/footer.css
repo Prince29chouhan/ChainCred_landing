@@ -1,0 +1,94 @@
+.footer {
+  /* background-color: #111111; */
+  color: #ffffff;
+  padding: 20px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 100vw;
+  margin-bottom: 20px;
+  margin-top: 40px;
+}
+
+.footer-logo {
+  display: flex;
+  align-items: center;
+}
+
+.footer-logo span {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.footer-logo .dot {
+  color: #3b82f6; /* Blue color for the dot */
+}
+
+.footer-links {
+  display: flex;
+  gap: 20px;
+}
+
+.footer-links a {
+  color: #ffffff;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-links .coming-soon {
+  background-color: #3b82f6;
+  padding: 5px 10px;
+  border-radius: 3px;
+}
+
+.footer-bottom {
+  border-top: 1px solid #333333;
+  padding-top: 10px;
+  text-align: center;
+  width: 100%;
+}
+
+.footer-social {
+  display: flex;
+  gap: 10px;
+}
+
+.footer-social a {
+  color: #ffffff;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #333333;
+  transition: background-color 0.3s ease;
+}
+
+.footer-social a:hover {
+  background-color: #444444;
+}
+
+.footer-social i {
+  font-size: 1.2rem;
+}
+
+
+.nav-link {
+  /* text-white; */
+  padding: 8px 16px;
+  border-radius: 4px;
+}
+
+.nav-link.active {
+  background-color: #085bea; /* Using a darker shade to highlight the active link */
+  color: white;
+ 
+}

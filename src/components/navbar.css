@@ -1,0 +1,25 @@
+.navbar{
+    position: sticky;
+}
+
+header, main, footer {
+    position: relative;
+    z-index: 1;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-link {
+    /* text-white; */
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+  
+  .nav-link.active {
+    background-color: #085bea; /* Using a darker shade to highlight the active link */
+    color: white;
+   
+  }
+  

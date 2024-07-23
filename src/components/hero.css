@@ -1,0 +1,119 @@
+/* src/CatalystPage.css */
+.container {
+    background: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    overflow: hidden;
+    min-width: 98.82vw;
+    font-family: 'ClashDisplay';
+  }
+  
+  .container::before {
+    content: '';
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0, 128, 119, 0.7) 0%, rgba(0, 128, 0, 0) 70%);
+    transform: translate(50%, -50%);
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  header, main, footer {
+    position: relative;
+    z-index: 1;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-link {
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+  
+  .nav-link.active {
+    background-color: #085bea; /* Using a darker shade to highlight the active link */
+    color: white;
+  }
+  
+  .navbar {
+    position: sticky;
+  }
+  
+  .investment {
+    display: flex;
+  }
+  
+  .gray-box {
+    background: linear-gradient(135deg, #333333 0%, #555555 100%);
+  }
+  
+  .blue-box {
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    .container::before {
+      width: 400px;
+      height: 400px;
+      top: 40%;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .container {
+      min-width: 100vw;
+    }
+  
+    .container::before {
+      width: 300px;
+      height: 300px;
+      top: 50%;
+      right: 20%;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .container::before {
+      width: 200px;
+      height: 200px;
+      top: 60%;
+      right: 10%;
+    }
+  
+    .nav-link {
+      padding: 6px 12px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .container::before {
+      width: 150px;
+      height: 150px;
+      top: 70%;
+      right: 5%;
+    }
+  
+    .investment {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
