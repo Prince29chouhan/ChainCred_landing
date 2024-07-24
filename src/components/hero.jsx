@@ -31,7 +31,7 @@ const Hero = () => {
           </div>
         </div>
       </div>
-      <footer className="text-white text-center mb-20">
+      <footer className="text-white text-center">
         <div className='flex justify-between px-10 mb-5'>
           <p className='mx-5'>SCROLL DOWN</p>
           <p className='mx-5'>2024</p>

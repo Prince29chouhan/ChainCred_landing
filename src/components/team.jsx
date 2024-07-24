@@ -20,14 +20,14 @@ const teamMembers = [
 
 const TeamComponent = () => {
   return (
-    <div className={styles.teamContainer} id='team'>
-      <h2 className={` text-2xl md:text-4xl mt-5 md:mt-20 ${styles.teamTitle}`} data-aos="fade-down" data-aos-delay="50">Meet The People Behind ChainCred.</h2>
+    <div className={`mt-10 md:mt-5 p-5 md:p-20 ${styles.teamContainer}`} id='team'>
+      <h2 className={` text-2xl md:text-4xl mt-2 md:mt-16 text-center ${styles.teamTitle}`} data-aos="fade-down" data-aos-delay="50">Meet The People Behind <span className='text-center mx-16 md:mx-0'>ChainCred.</span></h2>
       <p className={styles.teamSubtitle} data-aos="fade-down" data-aos-delay="100">
         We come from different backgrounds, but there is one thing that brings us all together: we live and breathe web3.
       </p>
-      <div className={styles.teamMembers}>
+      <div className={`${styles.teamMembers}`}>
         {teamMembers.map((member, index) => (
-          <div key={index} className={styles.teamMember} data-aos="fade-down" data-aos-delay="250">
+          <div key={index} className={`w-[300px] md:w-[300px]  ${styles.teamMember}`} data-aos="fade-down" data-aos-delay="250">
             <img src={team} alt={member.name} className={styles.teamMemberImage} />
             <div className={styles.teamMemberTitle}>{member.title}</div>
             <div className={styles.teamMemberName}>{member.name}</div>
