@@ -32,9 +32,9 @@ const Hero = () => {
         </div>
       </div>
       <footer className="text-white text-center">
-        <div className='flex justify-between px-10 mb-5'>
-          <p className='mx-5'>SCROLL DOWN</p>
-          <p className='mx-5'>2024</p>
+        <div className='flex justify-between px-10 mb-2'>
+          <p className='mx-5 text-sm '>SCROLL DOWN</p>
+          <p className='mx-5 text-sm'>2024</p>
         </div>
         <hr className='mx-5 mb-5' data-aos="fade-down" data-aos-delay="50" />
       </footer>
