@@ -25,8 +25,8 @@ const About = () => {
                 </h4>
                 <p className="apply-paragraph mt-0 md:mt-10" data-aos="fade-down" data-aos-delay="250">
                   ChainCred brings ideas, capital, operational resources, and
-                  talent together. We partner with founders to transform the
-                  best ideas into groundbreaking protocols.
+                  talent together. We partner with founders for their finance ERP and 
+                  investors for their secured due-dilgence, cutting of the human bandwidth, all in real time.
                 </p>
               </div>
               <div className="apply-buttons flex-row md:flex-col">
@@ -41,7 +41,7 @@ const About = () => {
                     <span className="number">01</span>
                     <span className="role font-bold">Founders</span>
                     <span className="description">
-                      Apply to co-founder with ChaiCred
+                      Apply as a founder on ChainCred. Your end to end finance ERP. PDF to graphs in one click.
                     </span>
                   </div>
                   <span className="arrow">&#10142;</span>
@@ -59,7 +59,7 @@ const About = () => {
                       Investors
                     </span>
                     <span className="description">
-                      Apply to co-invest with ChainCred
+                      Apply as an investor on ChainCred. All your investments, verified and updated in real time at one place.
                     </span>
                   </div>
                   <span className="arrow">&#10142;</span>

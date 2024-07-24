@@ -5,16 +5,16 @@ const Join = () => {
   return (
     <div className="landing-page" id='join'>
       <div className="content">
-        <h1 className="title text-xl md:text-5xl" data-aos="fade-down" data-aos-delay="50">A VICTORIAN ACCELERATOR FOR GLOBALLY IMPACTFUL IDEAS.</h1>
+        <h1 className="title text-xl md:text-5xl" data-aos="fade-down" data-aos-delay="50">VERIFYING COMPANY FINANCES ON SOROBAN</h1>
         <p className="description text-sm md:text-xl" data-aos="fade-down" data-aos-delay="100">
-          All of Catalyst’s core accelerator operations will be conducted out of our offices in Victoria. We are in the process of closing a studio office with space to accommodate our team and a cohort of 3 startups to ideate, test & deliver with us full-time.
+        Infra for Founders & Investors to exchange & fetch credible company finances on Soroban ensuring data transparency & verification. Get all real time verified updates pictorially with ChainCred.
         </p>
         <button className="cta-button" data-aos="fade-down" data-aos-delay="150">Let's Join Now</button>
       </div>
       <div className="map-container">
         <div className="map " data-aos="fade-down" data-aos-delay="150">
           <div className="location">
-            <span className="label">Catalyst Core Accelerator</span>
+            <span className="label">ChainCred</span>
             <div className="pin"></div>
           </div>
         </div>

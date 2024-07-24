@@ -5,22 +5,16 @@ import team from '../assets/team.png'
 
 const teamMembers = [
   {
-    name: 'Anthony Ryan',
-    title: 'Catalyst Founder',
-    description: 'Anthony is the founder of Catalyst. The fund was launched to invest, incubate, and accelerate the next generation of projects.',
+    name: 'Parth Ajmera',
+    title: 'CEO, Founder',
+    description: 'CS graduate from IITM with strong passion for web3, computer systems and technology, driven by the intent to revolutionize',
     image: {team}
   },
   {
-    name: 'Levi Rybalov',
-    title: 'Mechanism Designer',
-    description: 'Levi is Head of Research at Catalyst. His primary focus is on mechanism design and multi-agent crypto economic protocols.',
+    name: 'Gaurav Jhawar',
+    title: 'CMO, Co-Founder',
+    description: 'Highly experienced as Product Manager with multiple giants, is all set to dive into building something for the industry',
     image: "https://i.pinimg.com/736x/51/e0/d5/51e0d5aa27808ce689e3dd5a5cd7685a.jpg"
-  },
-  {
-    name: 'Archie Whitford',
-    title: 'Investment Analyst',
-    description: 'Archie is the fund\'s analyst fresh out of a Bachelor of Commerce from the University of Melbourne.',
-    image: {team}
   }
 ];
 

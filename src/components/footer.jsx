@@ -33,7 +33,7 @@ const Foot = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        © 2023 ChainCred. All rights reserved.
+        © 2024 ChainCred. All rights reserved.
       </div>
     </footer>
   );
