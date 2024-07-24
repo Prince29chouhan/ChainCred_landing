@@ -1,0 +1,152 @@
+/* src/CatalystPage.css */
+.container {
+    background: black;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: fit-content;
+    overflow: hidden;
+    min-width: 98.82vw;
+    font-family: 'ClashDisplay', sans-serif;
+  }
+  
+  .container::before {
+    content: '';
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(0, 128, 119, 0.7) 0%, rgba(0, 128, 0, 0) 70%);
+    transform: translate(50%, -50%);
+    z-index: 0;
+    overflow: hidden;
+  }
+  
+  header, main, footer {
+    position: relative;
+    z-index: 1;
+  }
+  
+  header a:hover {
+    text-decoration: underline;
+  }
+  
+  .nav-link {
+    padding: 8px 16px;
+    border-radius: 4px;
+  }
+  
+  .nav-link.active {
+    background-color: #085bea; /* Using a darker shade to highlight the active link */
+    color: white;
+  }
+  
+  .gray-box {
+    background: linear-gradient(135deg, #333333 0%, #555555 100%);
+  }
+  
+  .blue-box {
+    background: linear-gradient(135deg, #3b82f6 0%, #60a5fa 100%);
+  }
+  
+  /* Text Sizes */
+  .text-large {
+    font-size: 2rem;
+  }
+  
+  .text-xlarge {
+    font-size: 3rem;
+  }
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 1200px) {
+    .container::before {
+      width: 100vw;
+      height: 100vh;
+      top: 40%;
+    }
+    
+    .text-large {
+      font-size: 1.8rem;
+    }
+    
+    .text-xlarge {
+      font-size: 2.5rem;
+    }
+  }
+  
+  @media (max-width: 992px) {
+    .container {
+      min-width: 95vw;
+    }
+  
+    .container::before {
+      width: 100vw;
+      height: 100vh;
+      top: 50%;
+      right: 20%;
+    }
+  
+    .text-large {
+      font-size: 1.6rem;
+    }
+  
+    .text-xlarge {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .container {
+      padding: 20px;
+    }
+  
+    .container::before {
+      width: 100vw;
+      height: 100vh;
+      top: 60%;
+      right: 10%;
+    }
+  
+    .text-large {
+      font-size: 1.4rem;
+    }
+  
+    .text-xlarge {
+      font-size: 1.6rem;
+    }
+  
+    .nav-link {
+      padding: 6px 12px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .container {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .container::before {
+      width: 200px;
+      height: 200px;
+      top: 30%;
+      right: 50%;
+    }
+  
+    .text-large {
+      font-size: 1.2rem;
+    }
+  
+    .text-xlarge {
+      font-size: 1.4rem;
+    }
+  
+    .investment {
+      flex-direction: column;
+      align-items: center;
+    }
+  }
+  
