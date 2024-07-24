@@ -16,7 +16,7 @@
   }
   
   .title {
-    font-size: 3rem;
+    /* font-size: 3rem; */
     font-weight: bold;
     margin-bottom: 20px;
   }
@@ -71,7 +71,7 @@
   
   .label {
     background-color: #3b82f6;
-    width: 200px;
+    width: 100%;
     padding: 5px 10px;
     color: #ffffff;
     border-radius: 3px;

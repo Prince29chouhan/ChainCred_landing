@@ -27,7 +27,7 @@ const teamMembers = [
 const TeamComponent = () => {
   return (
     <div className={styles.teamContainer} id='team'>
-      <h2 className={styles.teamTitle} data-aos="fade-down" data-aos-delay="50">Meet The People Behind ChainCred.</h2>
+      <h2 className={` text-2xl md:text-4xl mt-5 md:mt-20 ${styles.teamTitle}`} data-aos="fade-down" data-aos-delay="50">Meet The People Behind ChainCred.</h2>
       <p className={styles.teamSubtitle} data-aos="fade-down" data-aos-delay="100">
         We come from different backgrounds, but there is one thing that brings us all together: we live and breathe web3.
       </p>

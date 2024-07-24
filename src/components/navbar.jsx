@@ -17,7 +17,7 @@ function Navbar() {
 
   return (
     <div className='navbar'>
-      <header className="flex justify-between items-center py-4 px-8 sticky top-0 bg-black z-50">
+      <header className="flex justify-between items-center py-4 px-0 md:px-8 sticky mb-10 md:mb-0 top-0 bg-black z-50">
         <div className="text-white text-2xl font-bold">ChainCred<span className="text-blue-600">.</span></div>
         <nav className="hidden md:flex space-x-6 text-white">
           <Link
@@ -53,7 +53,7 @@ function Navbar() {
             className={`nav-link ${activeTab === 'about' ? 'active' : ''}`}
             onClick={() => handleLinkClick('about')}
           >
-            AboutUs
+            About Us
           </a>
         </nav>
         <a href='#join' className="hidden md:inline-block bg-blue-600 text-white py-2 px-4 rounded">Join Now</a>
@@ -98,7 +98,7 @@ function Navbar() {
             className={`nav-link ${activeTab === 'about' ? 'active' : ''}`}
             onClick={() => handleLinkClick('about')}
           >
-            AboutUs
+            About Us
           </a>
           <a href='#join' className="bg-blue-600 text-white py-2 px-4 rounded">Join Now</a>
         </div>

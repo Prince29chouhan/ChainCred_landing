@@ -59,11 +59,11 @@ const testimonials = [
     return (
       <>
         <div className="text-white text-center mt-[10%]">
-          <h1 className="text-7xl" data-aos="fade-down" data-aos-delay="50">Testimonials</h1>
+          <h1 className="text-4xl md:text-7xl" data-aos="fade-down" data-aos-delay="50">Testimonials</h1>
           <div className="flex items-center justify-center">
             <div className="w-60 h-2 bg-gray-500 flex items-center justify-center mt-5"></div>
           </div>
-          <p className="px-20 text-xl mt-10 text-gray-300" data-aos="fade-down" data-aos-delay="100">
+          <p className="px-0 text-sm md:text-xl mt-10 md:px-20 text-gray-300" data-aos="fade-down" data-aos-delay="100">
             At our company, we are dedicated to creating exceptional digital
             experiences for brands, transcending beyond the ordinary. Our app
             offers a seamless platform where investors and founders can
@@ -88,7 +88,7 @@ const testimonials = [
                   <img src={testimonial.image} alt={testimonial.name} />
                 </div>
                 <div className="testimonial-info mt-5">
-                  <h1>{testimonial.name}</h1>
+                  <h1 className="text-black md:text-white">{testimonial.name}</h1>
                   <p className="text-xl">{testimonial.role}</p>
                 </div>
               </div>

@@ -11,28 +11,28 @@ const About = () => {
       <section className="apply-section">
         <div className="glass-effect flex-col">
           <div>
-            <h3 className="apply-heading glass text-6xl mb-20" data-aos="fade-down" data-aos-delay="50">
+            <h3 className="apply-heading glass text-2xl mb-4 md:mb-20 md:text-5xl mx-0" data-aos="fade-down" data-aos-delay="50">
               Our thesis driven differentiated funds provide our limited
               <span className="text-gray-400" data-aos="fade-down" data-aos-delay="50"> partners exposure to web3 assets that generate alpha.</span>
             </h3>
         
           </div>
-          <div className="flex">
+          <div className="flex flex-col md:flex-row">
             <div className="apply-text">
               <div className="flex w-full flex-col">
                 <h4 className="apply-subheading text-3xl font-semibold" data-aos="fade-down" data-aos-delay="150">
                   Apply Now for Investor or Founders
                 </h4>
-                <p className="apply-paragraph" data-aos="fade-down" data-aos-delay="250">
+                <p className="apply-paragraph mt-0 md:mt-10" data-aos="fade-down" data-aos-delay="250">
                   ChainCred brings ideas, capital, operational resources, and
                   talent together. We partner with founders to transform the
                   best ideas into groundbreaking protocols.
                 </p>
               </div>
-              <div className="apply-buttons">
+              <div className="apply-buttons flex-row md:flex-col">
                 <button
                   href="#found"
-                  className={`nav-link apply-button found ${
+                  className={`nav-link apply-button  found ${
                     activeTab === "found" ? "active" : ""
                   }`}
                   onClick={() => setActiveTab("found")}
